@@ -1,4 +1,4 @@
-if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, 91396524) then
+if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game:GetService("Players").LocalPlayer.UserID, 91396524) or game:GetService("Players").LocalPlayer:IsInGroup(2746691) then
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "TOYOTA",
 		Text = "Click rightAlt on you keyboard to toggle the gui visibility.",
